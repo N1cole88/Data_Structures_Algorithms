@@ -70,7 +70,7 @@ class Node:
         self.color = BLUE
 
     def make_path(self):
-        self.color = PURPLE
+        self.color = TURQUOISE
 
     def draw(self, win):
         pygame.draw.rect(win, self.color, (self.x, self.y, self.width, self.width))
@@ -200,7 +200,7 @@ def reconstruct_path(came_from, current, draw):
 
 
 def main(win, width):
-    ROWS = 80
+    ROWS = 50
     grid = make_grid(ROWS, width)
 
     start = None
